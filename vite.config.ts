@@ -10,6 +10,10 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/Lock-Kingdom/',  // 重要：必须与仓库名一致
+  build: {
+    outDir: 'dist'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
